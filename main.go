@@ -10,4 +10,7 @@ func main() {
 
 	log.Inform("space-pod ⚡")
 	blur()
+
+	const httptcpaddr string = ":80"
+	httpserve(httptcpaddr)
 }
