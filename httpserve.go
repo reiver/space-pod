@@ -7,6 +7,7 @@ import (
 
 	"github.com/reiver/space-pod/srv/http"
 	"github.com/reiver/space-pod/srv/log"
+	_ "github.com/reiver/space-pod/www"
 )
 
 func httpserve(tcpaddr string) error {
