@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/reiver/space-pod/cfg"
 	"github.com/reiver/space-pod/srv/log"
 )
 
@@ -11,6 +12,6 @@ func main() {
 	log.Inform("space-pod ⚡")
 	blur()
 
-	const httptcpaddr string = ":80"
+	var httptcpaddr string = cfg.WebServerTCPAddress()
 	httpserve(httptcpaddr)
 }
